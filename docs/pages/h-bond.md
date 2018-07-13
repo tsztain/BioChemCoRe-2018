@@ -117,6 +117,7 @@ for frame in range(n_frames):
             # The dictionary "definitions" are all the hbonds in that frame
             Frame2hbond[frame].append(tuple(hbond))  
 ```
+#### Q5. How would you re-write this code if you wanted to know all the frames which each hbond is in, rather than all the hbonds per each frame?
 
 ### 7. Plot the total number of hydrogen bonds per frame
 ```
@@ -133,14 +134,14 @@ plt.savefig('figure_name.png')
 plt.show()
 ```
 
-#### Q5. Plot the total number of H-bonds per frame for each replicate (md1, md2, md3) for each HSP90 system. 
+#### Q6. Plot the total number of H-bonds per frame for each replicate (md1, md2, md3) for each HSP90 system. 
 That's 18 plots! Find a way to put this information all together in one image or plot -- make it as clear and readable as possible.  
 
-#### Q6. Now let's compare the systems and try to correlate the H-bond information with IC50 values. 
+#### Q7. Now let's compare the systems and try to correlate the H-bond information with IC50 values. 
 You were given the IC50 values (in nM) for each ligand. As you have done for the previous analyses, we will express IC50 as pIC50 (pIC50 = -log(IC50)). Think back to the Distance Analysis tutorial, where you plotted the standard deviation of the most stable conserved distance for each system against the pIC50. How would do the same thing in terms of H-bonds? Brainstorm a few ideas and find a way to turn this into an informative figure. Remember to account for the three replicates for each system. 
 
-#### Q7. Which H-bonds persist throughout the entire simulation? 
+#### Q8. Which H-bonds persist throughout the entire simulation? 
 Use your knowledge from the water residency tutorial and combine it with what you've learned today to figure out which H-bonds remain constant over time. 
 
-#### Q8. Summary figure. 
+#### Q9. Summary figure. 
 Prepare a slide with the most important results you have from this tutorial. Make sure to include an informative VMD figure and a plot correlating H-bonds and IC50s. Be ready to clearly explain what you found to someone who doesn't know anything about what you're doing! 
